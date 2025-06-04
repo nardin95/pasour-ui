@@ -1,0 +1,74 @@
+/* src/components/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;  /* Set max width of modal */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  .modal-body {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px; /* More space below the input */
+    width: 100%;  /* Ensure input field takes full width of the modal */
+    box-sizing: border-box; /* Prevent overflow */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Game Mode Toggle buttons */
+  .game-mode-toggle button {
+    width: 45%;  /* Set both buttons to 45% width to make them equal */
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px;  /* Ensure consistent padding */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .game-mode-toggle .active {
+    background-color: #0056b3; /* Active button color */
+  }
+  
+  button:hover {
+    background-color: #0056b3;  /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
