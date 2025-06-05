@@ -9,29 +9,29 @@
   cursor: pointer; /* Indicate that the card is clickable */
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
 }
-  
-  .card span {
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .player-hand, .opponent-hand, .ground {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .opponent-hand .cards {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;  /* Make the image fill the container */
-    height: 100%; /* Make the image fill the container */
-    object-fit: contain; /* Ensure the image fits within the div without distortion */
-  }
 
-  .card.selectable:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to indicate selectability */
-  }
+.card span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.player-hand, .opponent-hand, .ground {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.opponent-hand .cards {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;  /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: contain; /* Ensure the image fits within the div without distortion */
+}
+
+.card.selectable:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to indicate selectability */
+}

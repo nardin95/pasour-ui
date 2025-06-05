@@ -5,41 +5,41 @@
     align-items: center;
     padding: 20px;
     background-color: green;
-  }
-  
-  /* For the Player and Opponent hands */
-  .hand {
+}
+
+/* For the Player and Opponent hands */
+.hand {
     display: flex;           /* Align cards horizontally */
     justify-content: center; /* Center the cards */
     gap: 10px;               /* Small space between cards */
     margin-bottom: 20px;     /* Optional, for spacing between hands */
-  }
-  
-  /* For Player's Hand */
-  .player-hand {
+}
+
+/* For Player's Hand */
+.player-hand {
     margin-top: 20px;
     /* background-color: red; */
 
-  }
-  
-  /* For Opponent's Hand */
-  .opponent-hand {
+}
+
+/* For Opponent's Hand */
+.opponent-hand {
     margin-top: 20px;
     /* background-color: red; */
 
-  }
-  
-  /* For the Ground (Center Cards) */
-  .ground {
+}
+
+/* For the Ground (Center Cards) */
+.ground {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
     /* background-color: yellow; */
-  }
-  
-  /* For Game Bar */
-  .game-bar {
+}
+
+/* For Game Bar */
+.game-bar {
     position: relative;
     background: #f4f4f4;
     padding: 10px;
@@ -47,5 +47,5 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+}
   

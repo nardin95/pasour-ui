@@ -1,7 +1,7 @@
 // Card.tsx
 import React from 'react';
-import { getCardFileName } from '../utils/cardMapping';
 import './Card.css';
+import { getCardFileName } from "../../utils/cardMapping";
 
 
 interface CardProps {
