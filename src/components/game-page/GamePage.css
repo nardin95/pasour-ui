@@ -1,0 +1,33 @@
+.game-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .game-sidebar {
+    position: sticky;
+    top: 20px;
+    width: 260px;
+    flex-shrink: 0;
+  }
+  
+  .game-field {
+    flex: 1;
+  }
+  
+  /* background */
+  .game-page {
+    min-height: 100vh;       /* takes full viewport height */
+    width: 100vw;            /* takes full viewport width */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+  

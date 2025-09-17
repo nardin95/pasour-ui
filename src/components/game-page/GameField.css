@@ -1,51 +1,62 @@
-/* CSS for the GameField */
+ /*src/styles/GameField.css */
 .game-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;   
+  left: -65px; 
 }
 
-/* For the Player and Opponent hands */
 .hand {
-    display: flex;           /* Align cards horizontally */
-    justify-content: center; /* Center the cards */
-    gap: 10px;               /* Small space between cards */
-    margin-bottom: 20px;     /* Optional, for spacing between hands */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-/* For Player's Hand */
 .player-hand {
-    margin-top: 20px;
-    /* background-color: red; */
-
+  display: relative;
+  margin-top: 50px;
 }
 
-/* For Opponent's Hand */
 .opponent-hand {
-    margin-top: 20px;
-    /* background-color: red; */
-
+  display: flex;
+  margin-top: -10px;
+  margin-left: -50px;
 }
 
-/* For the Ground (Center Cards) */
 .ground {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    /* background-color: yellow; */
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 20px;
 }
 
-/* For Game Bar */
-.game-bar {
-    position: relative;
-    background: #f4f4f4;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+/* Curved hand support */
+.hand-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 200px; /* adjust as needed */
 }
+
+.card-wrapper {
+  transform-origin: top center;
+  margin: 0 -70px; /* overlap effect */
+  transition: transform 0.3s ease;
+}
+/* Add this below your existing styles in GameField.css */
+.player-name {
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black; /* optional, makes text pop */
+  text-align: center;
+  margin-top: 8px; /* adjust spacing relative to cards */
+}
+
+  
   

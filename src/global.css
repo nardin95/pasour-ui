@@ -1,0 +1,17 @@
+/* Make the background image apply to the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/public/assets/backgroundImage.jpg'); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif; /* optional */
+  }
+  
+  /* Ensure content respects full height */
+  #root, .app {
+    min-height: 100vh;
+  }
+  
